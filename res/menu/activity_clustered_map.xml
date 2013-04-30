@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!--
+    <item
+        android:id="@+id/menu_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menu_settings"/> -->
+        <item 
+            android:drawable="@drawable/menu_listado_ico"
+            android:id="@+id/ver_listado"
+			android:onClick="onListBtnClick"
+			android:icon="@drawable/menu_listado_ico"
+			android:showAsAction="always"/>
+    <item android:drawable="@drawable/ver_favoritos_ico" 
+      android:id="@+id/ver_favoritos"
+      android:onClick="onFavBtnClick"
+      android:icon="@drawable/ver_favoritos_ico"
+      android:showAsAction="always"
+      android:visible="false"/>
+
+	<item android:drawable="@drawable/ver_usario_ico" 
+	      android:id="@+id/ver_usario"
+	      android:onClick="onUsrBtnClick"
+	      android:icon="@drawable/ver_usario_ico"
+	      android:showAsAction="always"
+	      android:visible="false"/>    
+
+</menu>

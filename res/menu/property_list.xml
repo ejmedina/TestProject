@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<item android:drawable="@drawable/ver_en_mapa_ico" 
+      android:id="@+id/ver_en_mapa"
+      android:onClick="onMapBtnClick"
+      android:icon="@drawable/ver_en_mapa_ico"
+      android:showAsAction="always"/>
+
+<item android:drawable="@drawable/ver_favoritos_ico" 
+      android:id="@+id/ver_favoritos"
+      android:onClick="onMapBtnClick"
+      android:icon="@drawable/ver_favoritos_ico"
+      android:showAsAction="always"
+      android:visible="false"/>
+
+<item android:drawable="@drawable/ver_usario_ico" 
+      android:id="@+id/ver_usario"
+      android:onClick="onMapBtnClick"
+      android:icon="@drawable/ver_usario_ico"
+      android:showAsAction="always"
+      android:visible="false"/>
+</menu>

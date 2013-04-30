@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+	
+	<RelativeLayout
+        android:id="@+id/footer_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:context=".PropertyListActivity"
+        android:background="@color/botton_button_grey"
+        android:layout_alignParentBottom="true" >
+
+	    <ImageView
+            android:id="@+id/line_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/footer_lineadivisora" />
+	    
+        <Button
+            android:id="@+id/boton_contactar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/line_right"
+            android:background="@null"
+            android:drawableTop="@drawable/footer_contactar_ico"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="@string/contactar"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:textColor="@drawable/footer_guardar_font"
+            android:onClick="onContactarBtnClick" />
+
+        <Button
+            android:paddingLeft="20dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/line_right"
+            android:background="@null"
+            android:drawableTop="@drawable/footer_compartir_ico"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="@string/compartir"
+            android:textColor="@drawable/footer_guardar_font"
+            android:onClick="onCompartirBtnClick" />
+
+        
+    </RelativeLayout>
+    <com.properati.user.widget.CustomScrollView 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/white"
+	android:id="@+id/scroll_view"
+	android:layout_above="@id/footer_content"
+	>
+		<LinearLayout
+		    android:id="@+id/container"
+		    android:paddingLeft="10dp"
+		    android:paddingRight="10dp"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical"
+		    tools:context=".PropertyDetail" >
+		    <android.support.v4.view.ViewPager
+		    	android:id="@+id/pager"
+		    	android:layout_width="match_parent"
+		    	android:layout_height="300dp" 
+		    	/>
+		    <com.viewpagerindicator.CirclePageIndicator
+			android:id="@+id/indicator"
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			/>
+		    <ImageView 
+		        android:src="@drawable/lineadivisora_horizontal"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:paddingTop="5dp"
+		        android:paddingBottom="5dp"/>
+		    <TextView 
+		        android:id="@+id/tipo_operacion"
+		        android:background="@drawable/propdetalle_etiqueta"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white"
+		        android:visibility="gone"
+		        />
+		    <TextView
+			        android:id="@+id/street_name"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:visibility="gone"
+			        />
+			    <TextView
+			        android:id="@+id/title_price"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+					android:textStyle="bold"
+					android:visibility="gone"
+			        />
+			    <TextView
+			        android:id="@+id/rooms_description"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:visibility="gone"
+			        />
+			    <TextView
+			        android:id="@+id/surface_total"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:visibility="gone"
+			        />
+			   
+		  		<TextView 
+		  		    android:id="@+id/detalle_prop"
+		  		    android:textStyle="bold"
+		  		    android:textSize="17sp"
+		  		    android:layout_width="wrap_content"
+		  		    android:layout_height="wrap_content"
+		  		    android:text="@string/detalle_de_prop"
+		  		    android:visibility="gone"
+		  		    />
+		  </LinearLayout>
+	</com.properati.user.widget.CustomScrollView>
+</RelativeLayout>

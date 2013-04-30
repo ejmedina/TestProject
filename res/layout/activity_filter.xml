@@ -1,0 +1,326 @@
+<RelativeLayout  
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+		android:background="@color/white"
+	    android:id="@+id/activity_filter"
+	    tools:context=".FilterActivity" >
+	        
+	    <!-- Custom Row Prices -->    
+		<RelativeLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="50dp"
+		    android:background="@drawable/row_color"
+		    android:onClick="pricesClick">
+		    <Spinner
+			    android:id="@+id/price_spinner"
+			    android:layout_width="0dp"
+			    android:layout_height="0dp"
+			    android:background="@drawable/home_btn_select"
+			    android:visibility="visible" />
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/price"
+		        android:textColor="@color/row_label_font_color"
+		        android:paddingLeft="10dp"
+		        android:layout_centerVertical="true"
+		        android:duplicateParentState="true"/>
+		    <ImageView 
+		        android:id="@+id/flecha_price"
+		        android:src="@drawable/opciones_flecha_sel"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_alignParentRight="true"
+		        android:paddingRight="5dp"
+		        android:duplicateParentState="true"
+		    />
+
+		    <TextView
+		        android:id="@+id/price_selected"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignBottom="@+id/flecha_price"
+		        android:layout_marginRight="16dp"
+		        android:layout_toLeftOf="@+id/flecha_price"
+		        android:text="@string/todos"
+		        android:textColor="@color/row_item_font_color"
+		        android:duplicateParentState="true" />		    
+		</RelativeLayout>
+		<ImageButton 
+		    android:layout_width="match_parent"
+		    android:layout_height="1dp"
+		    android:background="@color/line_grey"/>
+		<!-- Custom Row Prices -->
+		<!-- Custom Row Property -->    
+		<RelativeLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="50dp"
+		    android:background="@drawable/row_color"
+		    android:onClick="propertyClick">
+		    <Spinner
+			    android:id="@+id/property_spinner"
+			    android:layout_width="0dp"
+			    android:layout_height="0dp"
+			    android:background="@drawable/home_btn_select"
+			    android:contentDescription="@string/property_type"
+			    android:visibility="visible" />
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/property"
+		        android:textColor="@color/row_label_font_color"
+		        android:paddingLeft="10dp"
+		        android:layout_centerVertical="true"
+		        android:duplicateParentState="true"/>
+		    <ImageView 
+		        android:id="@+id/flecha_property"
+		        android:src="@drawable/opciones_flecha_sel"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_alignParentRight="true"
+		        android:paddingRight="5dp"
+		        android:duplicateParentState="true"
+		    />
+
+		    <TextView
+		        android:id="@+id/property_selected"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignBottom="@+id/flecha_property"
+		        android:layout_marginRight="16dp"
+		        android:layout_toLeftOf="@+id/flecha_property"
+		        android:text="@string/todos"
+		        android:textColor="@color/row_item_font_color"
+		        android:duplicateParentState="true" />		    
+		</RelativeLayout>
+		<ImageButton 
+		    android:layout_width="match_parent"
+		    android:layout_height="1dp"
+		    android:background="@color/line_grey"/>
+		<!-- Custom Row Property -->
+		<!-- Custom Row Rooms -->    
+		<RelativeLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="50dp"
+		    android:background="@drawable/row_color"
+		 >
+		    <TextView 
+		        android:id="@+id/rooms_label"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/rooms"
+		        android:textColor="@color/black"
+		        android:paddingLeft="10dp"
+		        android:layout_centerVertical="true"
+			/>
+		    <TextView 
+		        android:id="@+id/rooms_text"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_alignParentRight="true"
+		        android:paddingRight="5dp"
+		        android:text=""
+		    />
+		    <SeekBar
+		        android:paddingLeft="6dp"
+		        android:paddingRight="6dp"
+		        android:thumbOffset="8dp"
+		        android:id="@+id/rooms_seek_bar"
+		        android:layout_width="120dp"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_marginLeft="40dp"
+		        android:progressDrawable="@drawable/seekbar_progress"
+		        android:layout_toRightOf="@+id/rooms_label"
+		        android:textColor="@color/row_item_font_color"
+        		android:thumb="@drawable/opciones_btn_ambientes" />
+		    
+		</RelativeLayout>
+		<ImageButton 
+		    android:layout_width="match_parent"
+		    android:layout_height="1dp"
+		    android:background="@color/line_grey"/>
+		<!-- Custom Row Rooms -->
+		<!-- Custom Row Surface -->    
+		<RelativeLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="50dp"
+		    android:background="@drawable/row_color"
+		    android:onClick="surfaceClick">
+		    <Spinner
+			    android:id="@+id/surface_spinner"
+			    android:layout_width="0dp"
+			    android:layout_height="0dp"
+			    android:background="@drawable/home_btn_select"
+			    android:visibility="visible" />
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/surface"
+		        android:textColor="@color/row_label_font_color"
+		        android:paddingLeft="10dp"
+		        android:layout_centerVertical="true"
+		        android:duplicateParentState="true"/>
+		    <ImageView 
+		        android:id="@+id/flecha_surface"
+		        android:src="@drawable/opciones_flecha_sel"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_alignParentRight="true"
+		        android:paddingRight="5dp"
+		        android:duplicateParentState="true"
+		    />
+
+		    <TextView
+		        android:id="@+id/surface_selected"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignBottom="@+id/flecha_surface"
+		        android:layout_marginRight="16dp"
+		        android:layout_toLeftOf="@+id/flecha_surface"
+		        android:text="@string/todos"
+		        android:textColor="@color/row_item_font_color"
+		        android:duplicateParentState="true" />		    
+		</RelativeLayout>
+		<ImageButton 
+		    android:layout_width="match_parent"
+		    android:layout_height="1dp"
+		    android:background="@color/line_grey"/>
+		<!-- Custom Row Surface -->
+		<!-- Custom Row Publish Date -->    
+		<RelativeLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="50dp"
+		    android:background="@drawable/row_color"
+		    android:onClick="publishDateClick">
+		    <Spinner
+			    android:id="@+id/publish_date_spinner"
+			    android:layout_width="0dp"
+			    android:layout_height="0dp"
+			    android:background="@drawable/home_btn_select"
+			    android:visibility="visible" />
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/fechas"
+		        android:textColor="@color/row_label_font_color"
+		        android:paddingLeft="10dp"
+		        android:layout_centerVertical="true"
+		        android:duplicateParentState="true"/>
+		    <ImageView 
+		        android:id="@+id/flecha_publish_date"
+		        android:src="@drawable/opciones_flecha_sel"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_alignParentRight="true"
+		        android:paddingRight="5dp"
+		        android:duplicateParentState="true"
+		    />
+
+		    <TextView
+		        android:id="@+id/publish_date_selected"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignBottom="@+id/flecha_publish_date"
+		        android:layout_marginRight="16dp"
+		        android:layout_toLeftOf="@+id/flecha_publish_date"
+		        android:text="@string/nofilter"
+		        android:textColor="@color/row_item_font_color"
+		        android:duplicateParentState="true" />		    
+		</RelativeLayout>
+		<ImageButton 
+		    android:layout_width="match_parent"
+		    android:layout_height="1dp"
+		    android:background="@color/line_grey"/>
+		<!-- Custom Row Publish Date -->
+<!--     <TextView 
+	        android:id="@+id/price_txt"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/price_txt_s"
+			/>
+		<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingBottom="@dimen/activity_vertical_margin"
+	    android:paddingLeft="@dimen/activity_horizontal_margin"
+	    android:paddingRight="@dimen/activity_horizontal_margin"
+	    android:paddingTop="@dimen/activity_vertical_margin"
+	    android:id="@+id/price_seek_bar_placeholder"
+	    tools:context=".FilterActivity" >
+		</RelativeLayout>
+		<Spinner
+	        android:id="@+id/property_type"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:contentDescription="@string/property_type"
+	        />
+		<TextView 
+	        android:id="@+id/room_txt"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/room_txt_s"
+			/>
+		<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingBottom="@dimen/activity_vertical_margin"
+	    android:paddingLeft="@dimen/activity_horizontal_margin"
+	    android:paddingRight="@dimen/activity_horizontal_margin"
+	    android:paddingTop="@dimen/activity_vertical_margin"
+	    android:id="@+id/rooms_seek_bar_placeholder"
+	    tools:context=".FilterActivity" >
+		</RelativeLayout>
+		<TextView 
+	        android:id="@+id/sup_txt"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/sup_txt_s"
+			/>
+		<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingBottom="@dimen/activity_vertical_margin"
+	    android:paddingLeft="@dimen/activity_horizontal_margin"
+	    android:paddingRight="@dimen/activity_horizontal_margin"
+	    android:paddingTop="@dimen/activity_vertical_margin"
+	    android:id="@+id/sup_seek_bar_placeholder"
+	    tools:context=".FilterActivity" >
+		</RelativeLayout>
+		<Spinner
+	        android:id="@+id/date"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:contentDescription="@string/date_desc"
+	        />
+	 -->	
+	</LinearLayout>
+
+	<Button
+	    android:id="@+id/apply_filters"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginBottom="20dp"
+	    android:background="@drawable/btn_buscar"
+	    android:onClick="onApplyFiltersButtonClick"
+	    android:text="@string/apply_filters"
+	    android:textColor="@color/white" />
+
+</RelativeLayout>

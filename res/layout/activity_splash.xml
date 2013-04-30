@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/properati_grey">
+
+    <ImageView android:src="@drawable/home_logo"
+        	   android:id="@+id/splash_logo"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerInParent="true"
+               />
+   <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splash_logo"
+        android:layout_centerHorizontal="true"
+        android:text="@string/slogan"
+        android:textSize="15sp"
+        android:textColor="@color/slogan_grey"/>
+              
+</RelativeLayout>

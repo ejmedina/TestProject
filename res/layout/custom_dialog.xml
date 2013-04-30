@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    
+    android:background="@color/white"
+	>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+   		android:layout_height="50dp"
+   		android:background="@color/properati_light_blue"
+   		android:paddingLeft="2dp"
+   		android:id="@+id/blue"
+    	>
+    	<TextView 
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="Gracias!"
+    	    android:textColor="@color/white"
+    	    android:layout_centerVertical="true"
+    	    android:paddingLeft="8dp"/>
+    	<ImageButton 
+    	    android:paddingTop="2dp"
+    	    android:paddingRight="2dp"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:src="@drawable/mensaje_btn_cerrar"
+    	    android:layout_alignParentRight="true"
+    	    android:background="@null"/>  
+    </RelativeLayout>
+	<TextView 
+	    android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="El anunciante te contactará en las próximas 24 horas."
+    	android:layout_below="@id/blue"
+    	android:paddingTop="10dp"
+    	android:paddingBottom="10dp"
+    	android:paddingLeft="10dp"
+    	android:textColor="@color/black"/>
+</RelativeLayout>

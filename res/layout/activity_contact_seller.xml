@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:background="@color/properaty_light_grey">
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mail_img_contacto"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="20dp"
+            android:paddingRight="10dp"
+            android:id="@+id/seller_logo"
+            />
+        <TextView 
+            android:paddingTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interwin"
+            android:id="@+id/nombre_anunciante"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/seller_logo"
+            android:visibility="visible"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/direccion_anunciante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/nombre_anunciante"
+            android:layout_below="@+id/nombre_anunciante"
+            android:text="Javier Cabrera"
+            android:textSize="12sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/direccion_anunciante"
+            android:layout_toRightOf="@+id/seller_logo"
+            android:background="@drawable/mail_btn_llamar"
+            android:text="Llamar: 4855-7550"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+    <EditText 
+        android:id="@+id/email"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mail_input"
+        android:hint="@string/email"/>
+    <EditText
+        android:inputType="phone"
+        android:id="@+id/owner_telefono"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/mail_input"
+        android:hint="@string/phone"/>
+    <EditText 
+        android:id="@+id/texto_mensaje"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mail_txtarea"
+        android:hint="@string/message"/>
+    <Button 
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_buscar"
+        android:text="@string/contacto"
+        android:textColor="@color/white"
+        android:onClick="onClickContact"/>
+    
+</LinearLayout>

@@ -1,8 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <string name="app_name">TestProject</string>
+    <string name="location_disabled_err">No pudimos detectar tu ubicación. Intenta escribir ciudad/barrio</string>
+    <string name="surface">m2</string>
+    <string name="todos">Todos</string>
+    <string name="detalle_de_prop">Detalle de la propiedad</string>
+    <string name="detalle">Detalle</string>
+	<string name="string_ver_mapa">Ver en el mapa</string>
+    <string name="app_name">Properati</string>
+    <string name="menu_settings">Settings</string>
+    <string name="logo_properati">Logo de Properati</string>
+    <string name="ciudad_barrio">Campo para el ingreso de la ciudad o el barrio</string>
+    <string name="alquilar">Alquiler</string>
+    <string name="comprar">Comprar</string>
+    <string name="ciudad_barrio_h">Ciudad o Barrio</string>
+    <string name="my_location_compass">Encuentra mi ubicación</string>
+    <string name="buscar">Buscar</string>
+    <string name="buscar_h">Realizar una búsqueda</string>
+    <string name="alq_temp">Alquiler Temporal</string>
+    <string name="title_activity_property_list">MainActivity</string>
+    <string name="property_type">Tipo de Propiedad</string>
+    <string name="property">Propiedad</string>
+    <string name="price">Precio</string>
+    <string name="rooms">Ambientes</string>
+    <string name="room">Ambiente</string>
+    <string name="room_qty">Ambientes</string>
+    <string name="exactly">Exactamente</string>
+    <string name="sup_txt_s">Superficie(m²)</string>
+    <string name="sup_unity_txt_s">m²</string>
+    <string name="date_desc">Rango de Fechas</string>
+    <string name="near">Cerca de</string>
+    <string name="share">Compartir</string>
+    <string name="no_results">No se encontraron resultados.</string>
+    <string name="slogan">encontrá tu próxima casa</string>
+    <string name="guardar">Guardar</string>
+	<string name="ordenar">Ordenar</string>
+	<string name="fechas">Fecha de publicación</string>
+	<string name="nofilter">No filtrar</string>
+	<string-array name="surface_array">
+	    <item>No filtrar</item>
+	    <item>0 - 49</item>
+	    <item>50 - 99</item>
+	    <item>100 - 149</item>
+	    <item>150 - 199</item>
+	    <item>200 y más</item>
+	</string-array>
+	<string-array name="publish_date_array">
+	    <item>No filtrar</item>
+	    <item>Hoy</item>
+	    <item>Últimos 7 días</item>
+	    <item>Últimos 30 días</item>
+	    <item>Últimos 365</item>	    
+	</string-array>
+    <string-array name="property_type_s">
+        <item>Tipo de Propiedad</item>
+        <item>Indistinto</item>
+        <item>Departamento</item>
+        <item>Casa</item>
+        <item>Quinta</item>
+        <item>Terreno</item>
+        <item>Local</item>
+        <item>Oficina / Consultorio</item>
+        <item>Campo</item>
+        <item>Galpón</item>
+        <item>Edificio</item>
+        <item>Cochera</item>
+    </string-array>
+    <string-array name="property_type_sel">
+        <item>Todos</item>
+        <item>Departamento</item>
+        <item>Casa</item>
+        <item>Quinta</item>
+        <item>Terreno</item>
+        <item>Local</item>
+        <item>Oficina / Consultorio</item>
+        <item>Campo</item>
+        <item>Galpón</item>
+        <item>Edificio</item>
+        <item>Cochera</item>
+        <item>No filtrar</item>
+    </string-array>
+    <string-array name="price_range_buy">
+        <item >Todos</item>
+        <item >U$S 0 - U$S 49,990</item>
+        <item >U$S 50,000 - U$S 99,999</item>
+        <item >U$S 100,000 - U$S 149,999</item>
+        <item >U$S 150,000 - U$S 199,999</item>
+        <item >U$S 200,000 y más</item>
+        <item >No filtrar</item>
+    </string-array>
+    <string-array name="price_range_rent">
+        <item >Todos</item>
+        <item>$ 0 - $ 999</item>
+        <item>$ 1,000 - $ 1,999</item>
+        <item >$ 2,000 - $ 2,999</item>
+        <item >$ 3,000 - $ 3,999</item>
+        <item >$ 4,000 y más</item>
+        <item>No filtrar</item>        
+    </string-array>
+    <string-array name="rooms_qty_s">
+        <item>Ambientes</item>
+        <item>Indistinto</item>
+        <item>Monoambiente</item>
+        <item>de 2 ambientes</item>
+        <item>de 3 ambientes</item>
+        <item>de 4 o más ambientes</item>
+    </string-array>
+    <string-array name="date_spinner">
+        <item>Fecha</item>
+        <item>Indistinto</item>
+        <item>Hoy</item>
+        <item>Esta semana</item>
+        <item>Este mes</item>
+        <item>Este año</item>
+    </string-array>
+	<string-array name="order_array">
+	    <item>precio (de alto a bajo)</item>
+	    <item>precio (de bajo a alto)</item>
+	    <item>relevancia</item>
+	    <item>fecha de publicación</item>
+	</string-array>
+	<string name="email">Email</string>
+	<string name="message">Mensaje</string>
+	<string name="phone">Teléfono</string>
+	<string name="compartir">Compartir</string>
+    <string name="title_activity_property_detail">PropertyDetail</string>
+    <string name="descr_image">Imagen</string>
+    <string name="ver_mapa">Ver en el Mapa</string>
+    <string name="contacto">Contactar al Anunciante</string>
+    <string name="contactar">Contactar</string>
+    <string name="ver_en_web">Ver en la web</string>
+    <string name="title_activity_contact_seller">ContactSellerActivity</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_filter">FilterActivity</string>
+    <string name="refinar">Filtrar</string>
+    <string name="alert_thx_title">Gracias!</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="price_txt_s">Rango de Precio($)</string>
+    <string name="room_txt_s">Cantidad de Ambientes</string>
+    <string name="mayor_a">Más de</string>
+    <string name="mas_de">Más de</string>
+    <string name="menor_a">Menos de	</string>
+    <string name="apply_filters">Filtrar búsqueda</string>
+    <string name="title_activity_property_map">PropertyMapActivity</string>
+    <string name="cant_find_location_error">No pudimos detectar tu ubicación, intenta nuevamente.</string>
+    <string name="mapa">mapa</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_polaris_test"></string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_polaris_map_test"></string>
 
 </resources>

@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PropertyListActivity" >
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1">
+    </ListView>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/footer_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:context=".PropertyListActivity" >
+
+        <Button
+            android:id="@+id/boton_ordenar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:drawableTop="@drawable/footer_ordenar_ico"
+            android:onClick="onOrdenarButtonClick"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="@string/ordenar"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:textColor="@drawable/footer_guardar_font" />
+		<Spinner 
+		    android:id="@+id/order_spinner"
+		    android:layout_width="0dp"
+		    android:layout_height="0dp"/>
+        <ImageView
+            android:id="@+id/line_left" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/boton_ordenar"
+            android:background="@drawable/footer_lineadivisora" />
+
+        <ImageView
+            android:id="@+id/line_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/boton_ordenar"
+            android:background="@drawable/footer_lineadivisora" />
+
+        <Button
+            android:paddingLeft="20dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/line_right"
+            android:background="@null"
+            android:drawableTop="@drawable/footer_guardar_ico"
+            android:onClick="onGuardarButtonClick"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="@string/guardar"
+            android:textColor="@drawable/footer_guardar_font" />
+
+        <Button
+            android:id="@+id/boton_refinar"
+            android:paddingRight="20dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/line_left"
+            android:background="@null"
+            android:drawableTop="@drawable/footer_refinar_ico"
+            android:onClick="onRefinarButtonClick"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="@string/refinar"
+            android:textColor="@drawable/footer_guardar_font" />
+    </RelativeLayout>
+	
+</LinearLayout>
